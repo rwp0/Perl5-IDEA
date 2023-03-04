@@ -16,10 +16,13 @@
 
 package unit.pod.parser;
 
+import categories.Heavy;
 import com.intellij.openapi.util.io.FileUtil;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import unit.perl.parser.PerlParserTestBase;
 
+@Category(Heavy.class)
 public class PODParserRealTest extends PerlParserTestBase {
   public PODParserRealTest() {
     super("pod");

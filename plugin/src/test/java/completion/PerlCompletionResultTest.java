@@ -1,5 +1,5 @@
 /*
- * Copyright 2015-2020 Alexandr Evstigneev
+ * Copyright 2015-2023 Alexandr Evstigneev
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,10 +16,13 @@
 
 package completion;
 
+import categories.Heavy;
 import com.perl5.lang.perl.internals.PerlVersion;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(Heavy.class)
 public class PerlCompletionResultTest extends PerlCompletionResultTestCase {
   @Override
   protected String getBaseDataPath() {
